@@ -63,6 +63,8 @@ struct node* add_begin(struct node *head, int data)
   return ptr;
 };
 
+//Note : The time complexity of this function is Big_O(1).
+
 //-------- This is the code of NESO Academy ---------- //
 // struct node* add_begin(struct node *head, int data)
 // {

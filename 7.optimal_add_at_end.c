@@ -52,6 +52,7 @@ struct node* add_at_end(struct node *ptr, int data)
   ptr->link = temp; // This line is important since it is chaning the end of the node whenever this function is called. (which is same as {{head->link = current}} as previous codes.) 
   //ptr is updating the link part of the node with the new node.
   return temp;
+  //If you returned ptr instead of temp, the caller would still have a reference to the old last node, which is no longer the actual last node after the temp node is added. This would break the logic for further additions.
 }
 
 
